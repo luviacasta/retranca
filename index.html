@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>INGRESA TU USUARIO Y CONTRASEÑA</title>
+<link rel="stylesheet"
+		  type="text/css"
+		  href="sol/flor.css"
+	      />
+
+	<link rel="stylesheet"
+		  type="text/css"
+		  href="sol/flor.css"
+	      />
+<script>
+function comprobarclave(){
+clave1 = document.f1.clave1.value
+clave2 = document.f1.clave2.value
+ 
+ if (clave1 == "Luvia" && clave2 == "Gutierrez"){
+ alert("los datos coinciden...\n bienvenido");
+ var href ="pagina.html";
+ window.location=href;
+
+}
+
+else{
+	alert("las dos claves son distintas..\nintentalo nuevamente");
+	var href ="index.html";
+	window.location=href;
+};
+
+}
+</script>
+</head>
+
+<body background="lirio\16.jpg" >
+<font face = "arial">
+<h1><CENTER>
+
+	<font color = "black"><h2>INGRESA TU USUARIO Y CONTRASEÑA</h2></font></CENTER></h1>
+<br>
+<center>ingresa tu usuario y contraseña para que puedas acceder a nuestro sitio web y conozcas mas de nosotros</center>
+<br>
+<center><div id="div1">
+<form action=""name="f1">
+<center>usuario:<input type="password" name="clave1" size="20"><br></center>
+<center>contraseña:<input type="password" name="clave2" size="20"></center>
+<br>
+<center><input type="button" value ="ingresar" onclick="comprobarclave()" ></center>
+</center>
+</div>
+</form>
+
+
+
+</body>
+</html>
